@@ -1,4 +1,4 @@
 # portifolioCSS
-Meu primeiro projeto CSS e HTML
+Meu segundo projeto CSS e HTML
 Curriculum
 iniciante computação
