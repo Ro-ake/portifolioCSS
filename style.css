@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Roboto&display=swap');
+/*podemos criar variáveis para armazenar valores de características que utilizaremos diversas vezes* sempre usa ":root {--nome da var}*/
+:root{
+    --cor-primaria: #161934;
+    --cor-secundaria: #ffD9AE;
+    --cor-terciaria: #ffD7a9;
+    --fonte-primaria:'Krona One', sans-serif;
+    --fonte-secundaria:  'Montserrat', sans-serif;
+}
+
+*{   margin:0;
+    padding:0;
+}
+/*indica que todos elementos serão alterados*/
+/*buscar fontes de texto- google fonts*/
+body{
+   /* font-size: larger;
+    height: 100vh;*/
+    box-sizing:border-box;
+    background-color:var(--cor-primaria);
+    color:var(--cor-secundaria);
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+    /*superior direito inferior esquerdo*/
+}
+
+.cabecalho__menu{
+    gap: 2.20;
+}
+.cabecalho__menu__link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;/*1 rem = 16px*/
+    font-weight: 600;
+    color:var(--cor-secundaria);
+    text-decoration: none;
+}
+.apresentacao
+{
+    padding: 8% 15%;
+    display:flex;
+    align-items: center;
+    gap:80px;
+
+}
+
+.apresentacao__conteudo
+{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+font-size: 1.5rem;
+font-family: var(--fonte-primaria);
+}
+
+.titulo-destaque{
+    color:var(--cor-secundaria);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1rem;
+    font-family:var(--fonte-secundaria);
+ } 
+ .apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+ } 
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria) ;
+    font-size: 1rem;
+}
+
+ .apresentacao__links__navegacao{
+    /*background-color:#f0f858 ;*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border:5px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 21px 0;
+    text-decoration:  none;
+    color: var(--cor-secundaria);
+    font-family:var(--fonte-secundaria);
+ }
+
+ .apresentacao__links__link:hover{
+    background-color: var(--cor-secundaria);
+ }
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: #eee0ed;
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.apresentacao__curriculum__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+ } 
+
+.apresentacao__curriculum__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.2rem;
+}
+
+ .apresentacao__curriculum__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border:5px solid var(--cor-secundaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    font-weight: 100;
+    padding: 25px;
+    text-decoration:  none;
+    /*color: #f0f858;*/
+    font-family:var(--fonte-secundaria);
+ } 
+.apresentacao__imagem{
+    width: 50%;
+}
+/*usado@media para ajustarmos medidas do prjeto para outras telas*/
+@media (max-width:1200px){
+   .cabecalho{
+    padding:10%;
+  }
+    .cabecalho__menu{
+        justify-content:center ;
+
+    }   
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding:5%;
+        .apresentacao__conteudo{
+            width:auto;
+        }
+    }
+    
+}
