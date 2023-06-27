@@ -26,14 +26,16 @@ body{
 }
 
 .cabecalho__menu{
-    gap: 2.20;
+    display: flex;
+    justify-content: flex-start ;
+    gap: 2.2em;
 }
 .cabecalho__menu__link{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;/*1 rem = 16px*/
     font-weight: 600;
     color:var(--cor-secundaria);
-    text-decoration: none;
+    text-decoration: underline;
 }
 .apresentacao
 {
@@ -136,6 +138,7 @@ font-family: var(--fonte-primaria);
     font-family:var(--fonte-secundaria);
  } 
 .apresentacao__imagem{
+    object-position: center;
     width: 50%;
 }
 /*usado@media para ajustarmos medidas do prjeto para outras telas*/
@@ -150,9 +153,9 @@ font-family: var(--fonte-primaria);
     .apresentacao{
         flex-direction: column-reverse;
         padding:5%;
-        .apresentacao__conteudo{
+    }
+     .apresentacao__conteudo{
             width:auto;
         }
     }
     
-}
